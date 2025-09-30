@@ -34,10 +34,11 @@ export const providerMap = providers
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers,
- adapter: SupabaseAdapter({
-    url: process.env.SUPABASE_URL!,
-    secret: process.env.SUPABASE_SERVICE_ROLE_KEY!,
-  }),
+ 
+//  adapter: SupabaseAdapter({
+//     url: process.env.SUPABASE_URL!,
+//     secret: process.env.SUPABASE_SERVICE_ROLE_KEY!,
+//   }),
   pages: {
     signIn: "/pages/signin",
   },
