@@ -42,6 +42,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
   pages: {
     signIn: "/pages/signin",
   },
+  debug: true, 
 })
 
  
